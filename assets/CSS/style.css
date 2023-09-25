@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+/*---Card title---*/
+h5.card-title dt{
+    font-size: larger!important;
+    font-weight: bolder;
+}
