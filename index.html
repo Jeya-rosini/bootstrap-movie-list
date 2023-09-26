@@ -1,269 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Bootstrap Movie listing</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" 
-    crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Bootstrap Movie listing</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg text-white bg-light">
-            <div class="container-fluid bg-light">
-             <h3 class="navbar-title text-info">
-              <img src="./assets/Images/Logo.png" alt="Logo" class="img-fluid" width="200">
-             </h3>
-              <div class="container-fluid text-dark me-5 mx-5" id="navbarNavDropdown">
-                <ul class="navbar-nav text-dark px-5">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#" target="_blank">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#" target="_blank">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="https://www.imdb.com/" target="_blank">Downloads</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" target="_blank" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Explore
-                    </a>
-                    <ul class="dropdown-menu bg-info">
-                      <li><a class="dropdown-item" href="#" target="_blank">Books</a></li>
-                      <li><a class="dropdown-item" href="#" target="_blank">Images</a></li>
-                      <li><a class="dropdown-item" href="#" target="_blank">Movies</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav px-3">
-                  <li class="nav-item text-dark">
-                    <a class="nav-link active" aria-current="page" href="#" target="_blank"><i class="bi bi-facebook"></i></a>
-                  </li>
-                  <li class="nav-item text-dark">
-                    <a class="nav-link" href="#" target="_blank"><i class="bi bi-instagram"></i></a>
-                  </li>
-                  <li class="nav-item text-dark">
-                    <a class="nav-link" href="#" target="_blank"><i class="bi bi-youtube"></i></a>
-                  </li>
-                  <li class="nav-item text-dark">
-                    <a class="nav-link" href="#" target="_blank"><i class="bi bi-twitter-x"></i></a>
-                  </li>
-                  </ul>
-                  </div>
-            </div>
-          </nav>
-          <hr class="border border-dark border-2 opacity-100">
-          <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid bg-light">
-              <a class="navbar-brand" href="#" target="_blank">Genre</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse ms-5 mx-5" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#Action movies" target="_blank">Action</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#carouselExampleIndicators" target="_blank">Thriller</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#" target="_blank">Kids</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#" target="_blank">Horror</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#" target="_blank">Adventure</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Search By
-                    </a>
-                    <ul class="dropdown-menu bg-info">
-                      <li><a class="dropdown-item" href="#" target="_blank">Age limit</a></li>
-                      <li><a class="dropdown-item" href="#" target="_blank">Rating</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#" target="_blank">Theme</a></li>
-                    </ul>
-                  </li>
-              </div>
-            </div>
-          </nav>
-    </header>
-    <main>
-        <div class="Container bg-dark text-white text-center">
-            <h3 class="text-info px-5 py-5">
-                Movies of All Time
-            </h3>
-            <p class="lh-lg">
-              All time favorite movies can be watched here. Suggestions are welcome.
-            </p>
+  <header>
+    <nav class="navbar navbar-expand-lg text-white bg-light">
+      <div class="container-fluid bg-light">
+        <h3 class="navbar-title text-info">
+          <img src="./assets/Images/Logo.png" alt="Logo" class="img-fluid" width="200">
+        </h3>
+        <div class="container-fluid text-dark me-5 mx-5" id="navbarNavDropdown">
+          <ul class="navbar-nav text-dark px-5">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" target="_blank">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" target="_blank">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.imdb.com/" target="_blank">Downloads</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" target="_blank" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Explore
+              </a>
+              <ul class="dropdown-menu bg-info">
+                <li><a class="dropdown-item" href="#" target="_blank">Books</a></li>
+                <li><a class="dropdown-item" href="#" target="_blank">Images</a></li>
+                <li><a class="dropdown-item" href="#" target="_blank">Movies</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
-        <div class="row row-cols-1 row-cols-3 g-4 bg-dark text-white px-3 py-3">
-            <div class="col">
-              <div class="card m-3 p-4 bg-info" style="width: 18rem;">
-                <img src="./assets/Images/Alaipayuthey.jpg" class="card-img-top rounded" alt="Alaipayuthey">
-                <div class="card-body">
-                  <h5 class="card-title"><a class="card-title" href="https://www.imdb.com/title/tt0242256/" target="_blank">Alaipayuthey</a></h5>
-                  <p class="card-text">Favorite romantic movie over decades. Superb & touching movie. Must watch movie</p>
-                  <button type="button" class="btn btn-outline-dark">Download Now</button>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card m-3 p-4 bg-info" style="width: 18rem;">
-                <img src="./assets/Images/Smurfs_1080x1620.jpg" class="card-img-top rounded" alt="Smurfs">
-                <div class="card-body">
-                  <h5 class="card-title"><a class="card-title" href="https://www.imdb.com/title/tt0472181/" target="_blank">Smurfs</a></h5>
-                  <p class="card-text">A movie about unity is strength. Movie for all. Mood changer</p>
-                  <button type="button" class="btn btn-outline-dark">Download Now</button>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card m-3 p-4 bg-info" style="width: 18rem;">
-                <img src="./assets/Images/The Nun.jpg" class="card-img-top rounded" alt="The Nun">
-                <div class="card-body">
-                  <h5 class="card-title"><a class="card-title" href="https://m.imdb.com/title/tt5814060/?language=hi-in" target="_blank">The Nun</a></h5>
-                  <p class="card-text">Movie that scares a lot. Horror at peak. Take precaution before you watch.</p>
-                  <button type="button" class="btn btn-outline-dark">Download Now</button>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card m-3 p-4 bg-info" style="width: 18rem;">
-                <img src="./assets/Images/Wrong turn.jpg" class="card-img-top rounded" alt="Wrong Turn">
-                <div class="card-body">
-                  <h5 class="card-title"><a class="card-title" href="https://www.imdb.com/title/tt9110170/" target="_blank"> Wrong Turn</a></h5>
-                  <p class="card-text"> Nail biting movie. People who are weak heart should avoid this movie</p>
-                  <button type="button" class="btn btn-outline-dark">Download Now</button>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card m-3 p-4 bg-info" style="width: 18rem;">
-                <img src="./assets/Images/Panchathanthiram.jpg" class="card-img-top rounded" alt="Panchathanthiram">
-                <div class="card-body">
-                  <h5 class="card-title"><a class="card-title" href="https://www.imdb.com/title/tt0385928/" target="_blank">Panchathanthiram</a></h5>
-                  <p class="card-text"> Stress bluster. Laugh out Loud. Entertainer. Loop mode movie</p>
-                  <button type="button" class="btn btn-outline-dark">Download Now</button>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card m-3 p-4 bg-info" style="width: 18rem;">
-                <img src="./assets/Images/Life of Pi.jpg" class="card-img-top rounded" alt="Life of Pi">
-                <div class="card-body">
-                  <h5 class="card-title"><a class="card-title" href="https://m.imdb.com/title/tt5814060/?language=hi-in" target="_blank"> Life of Pi </a></h5>
-                  <p class="card-text"> Motivational movie, that one who do not lose hope in any situation.</p>
-                  <button type="button" class="btn btn-outline-dark">Download Now</button>
-                </div>
-              </div>
-            </div>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav px-3">
+            <li class="nav-item text-dark">
+              <a class="nav-link active" aria-current="page" href="#" target="_blank"><i class="bi bi-facebook"></i></a>
+            </li>
+            <li class="nav-item text-dark">
+              <a class="nav-link" href="#" target="_blank"><i class="bi bi-instagram"></i></a>
+            </li>
+            <li class="nav-item text-dark">
+              <a class="nav-link" href="#" target="_blank"><i class="bi bi-youtube"></i></a>
+            </li>
+            <li class="nav-item text-dark">
+              <a class="nav-link" href="#" target="_blank"><i class="bi bi-twitter-x"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <hr class="border border-dark border-2 opacity-100">
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid bg-light">
+        <a class="navbar-brand" href="#" target="_blank">Genre</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ms-5 mx-5" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#Action movies" target="_blank">Action</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#carouselExampleIndicators" target="_blank">Thriller</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#container-kids" target="_blank">Kids</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" target="_blank">Horror</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" target="_blank">Adventure</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Search By
+              </a>
+              <ul class="dropdown-menu bg-info">
+                <li><a class="dropdown-item" href="#" target="_blank">Age limit</a></li>
+                <li><a class="dropdown-item" href="#" target="_blank">Rating</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#" target="_blank">Theme</a></li>
+              </ul>
+            </li>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="Container bg-dark text-white text-center">
+      <h3 class="text-info px-5 py-5">
+        Movies of All Time
+      </h3>
+      <p class="lh-lg">
+        All time favorite movies can be watched here. Suggestions are welcome.
+      </p>
+    </div>
+    <div class="row row-cols-1 row-cols-3 g-4 bg-dark text-white px-3 py-3">
+      <div class="col">
+        <div class="card m-3 p-4 bg-info" style="width: 18rem;">
+          <img src="./assets/Images/Alaipayuthey.jpg" class="card-img-top rounded" alt="Alaipayuthey">
+          <div class="card-body">
+            <h5 class="card-title"><a class="card-title" href="https://www.imdb.com/title/tt0242256/"
+                target="_blank">Alaipayuthey</a></h5>
+            <p class="card-text">Favorite romantic movie over decades. Superb & touching movie. Must watch movie</p>
+            <button type="button" class="btn btn-outline-dark">Download Now</button>
           </div>
-          <div class="container-fluid bg-dark tex-white px-5 py-5" id="Action movies">
-            <h3 class="container-title text-info text-center">
-              Action Movies
-            </h3>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card m-3 p-4 bg-info" style="width: 18rem;">
+          <img src="./assets/Images/Smurfs_1080x1620.jpg" class="card-img-top rounded" alt="Smurfs">
+          <div class="card-body">
+            <h5 class="card-title"><a class="card-title" href="https://www.imdb.com/title/tt0472181/"
+                target="_blank">Smurfs</a></h5>
+            <p class="card-text">A movie about unity is strength. Movie for all. Mood changer</p>
+            <button type="button" class="btn btn-outline-dark">Download Now</button>
           </div>
-          <div class="row bg-dark px-2 py-2">
-            <div class="col-sm-4 mb-3 mb-sm-0">
-              <div class="card m-2 bg-info" style="width:18rem;">
-                <div class="card-body">
-                  <img src="./assets/Images/John Wick.jpg" class="card-img-top rounded" alt="John-wick">
-                  <h5 class="card-title pt-3"><a href="https://www.imdb.com/title/tt2911666/" class="card-title text-dark" target="_blank"> John Wick</a> </h5>
-                  <p class="card-text"> Action pack movie with critical thinking</p>
-                  <button type="button" class="btn btn-outline-dark">Know more</button>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4 mb-3 mb-sm-0">
-              <div class="card m-1 bg-info" style="width:18rem;">
-                <div class="card-body">
-                  <img src="./assets/Images/Vikram.jpg" class="card-img-top rounded" alt="vikram">
-                  <h5 class="card-title pt-3"><a href="https://www.imdb.com/title/tt9179430/" class="card-title text-dark" target="_blank">Vikram</a> </h5>
-                  <p class="card-text"> Entertainer</p>
-                  <button type="button" class="btn btn-outline-dark">Know more</button>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4 mb-3 mb-sm-0">
-              <div class="card m-1 bg-info" style="width:18rem;">
-                <div class="card-body">
-                  <img src="./assets/Images/RRR.jpg" class="card-img-top rounded" alt="RRR">
-                  <h5 class="card-title pt-3"><a href="https://www.imdb.com/title/tt8178634/" class="card-title text-dark" target="_blank"> RRR</a> </h5>
-                  <p class="card-text"> Movie with goosebumps everywhere</p>
-                  <button type="button" class="btn btn-outline-dark">Know more</button>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4 mb-3 mb-sm-0">
-              <div class="card m-1 bg-info" style="width:18rem;">
-                <div class="card-body">
-                  <img src="./assets/Images/Jailer.jpg" class="card-img-top rounded" alt="Jailer">
-                  <h5 class="card-title pt-3"><a href="https://www.imdb.com/title/tt11663228/" class="card-title text-dark" target="_blank"> Jailer</a> </h5>
-                  <p class="card-text"> Action, Emotional and Sentimental</p>
-                  <button type="button" class="btn btn-outline-dark">Know more</button>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4 mb-3 mb-sm-0">
-              <div class="card m-1 bg-info" style="width:18rem;">
-                <div class="card-body">
-                  <img src="./assets/Images/Theri.jpg" class="card-img-top rounded" alt="Theri">
-                  <h5 class="card-title pt-3"><a href="https://www.imdb.com/title/tt5440700/" class="card-title text-dark" target="_blank"> Theri</a> </h5>
-                  <p class="card-text"> Family entertainer</p>
-                  <button type="button" class="btn btn-outline-dark">Know more</button>
-                </div>
-              </div>
-            </div>
-          </div>  
-
-          <div id="carouselExampleInterval" class="carousel slide bg-dark" data-bs-ride="carousel">
-            <h3 class="carousel-title text-info text-center">
-              Thriller Movies
-            </h3>
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="10000">
-                <img src="./assets/Images/Kolaiyuthir Kaalam .jpg" class="d-block w-100" alt="KK">
-              </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <img src="./assets/Images/Orphan.jpg" class="d-block w-100" alt="Orphan">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/Images/Psycho.jpg" class="d-block w-100" alt="Psycho">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card m-3 p-4 bg-info" style="width: 18rem;">
+          <img src="./assets/Images/The Nun.jpg" class="card-img-top rounded" alt="The Nun">
+          <div class="card-body">
+            <h5 class="card-title"><a class="card-title" href="https://m.imdb.com/title/tt5814060/?language=hi-in"
+                target="_blank">The Nun</a></h5>
+            <p class="card-text">Movie that scares a lot. Horror at peak. Take precaution before you watch.</p>
+            <button type="button" class="btn btn-outline-dark">Download Now</button>
           </div>
-
-</main>
-<footer class="img-fluid bg-dark  px-3 py-3">
-  <img src="./assets/Images/Logo.png" class="img-fluid mx-auto d-block" style="width-100" alt="Logo Image">
-</footer>
-
-
-
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card m-3 p-4 bg-info" style="width: 18rem;">
+          <img src="./assets/Images/Wrong turn.jpg" class="card-img-top rounded" alt="Wrong Turn">
+          <div class="card-body">
+            <h5 class="card-title"><a class="card-title" href="https://www.imdb.com/title/tt9110170/" target="_blank">
+                Wrong Turn</a></h5>
+            <p class="card-text"> Nail biting movie. People who are weak heart should avoid this movie</p>
+            <button type="button" class="btn btn-outline-dark">Download Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card m-3 p-4 bg-info" style="width: 18rem;">
+          <img src="./assets/Images/Panchathanthiram.jpg" class="card-img-top rounded" alt="Panchathanthiram">
+          <div class="card-body">
+            <h5 class="card-title"><a class="card-title" href="https://www.imdb.com/title/tt0385928/"
+                target="_blank">Panchathanthiram</a></h5>
+            <p class="card-text"> Stress bluster. Laugh out Loud. Entertainer. Loop mode movie</p>
+            <button type="button" class="btn btn-outline-dark">Download Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card m-3 p-4 bg-info" style="width: 18rem;">
+          <img src="./assets/Images/Life of Pi.jpg" class="card-img-top rounded" alt="Life of Pi">
+          <div class="card-body">
+            <h5 class="card-title"><a class="card-title" href="https://m.imdb.com/title/tt5814060/?language=hi-in"
+                target="_blank"> Life of Pi </a></h5>
+            <p class="card-text"> Motivational movie, that one who do not lose hope in any situation.</p>
+            <button type="button" class="btn btn-outline-dark">Download Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid bg-light tex-white px-5 py-5" id="Action movies">
+      <h3 class="container-title text-dark text-center">
+        Action Movies
+      </h3>
+    </div>
+    <div class="row bg-dark px-2 py-2">
+      <div class="col-sm-4 mb-3 mb-sm-0">
+        <div class="card m-2 bg-info" style="width:18rem;">
+          <div class="card-body">
+            <img src="./assets/Images/John Wick.jpg" class="card-img-top rounded" alt="John-wick">
+            <h5 class="card-title pt-3"><a href="https://www.imdb.com/title/tt2911666/" class="card-title text-dark"
+                target="_blank"> John Wick</a> </h5>
+            <p class="card-text"> Action pack movie with critical thinking</p>
+            <button type="button" class="btn btn-outline-dark">Know more</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 mb-3 mb-sm-0">
+        <div class="card m-2 bg-info" style="width:18rem;">
+          <div class="card-body">
+            <img src="./assets/Images/Vikram.jpg" class="card-img-top rounded" alt="vikram">
+            <h5 class="card-title pt-3"><a href="https://www.imdb.com/title/tt9179430/" class="card-title text-dark"
+                target="_blank">Vikram</a> </h5>
+            <p class="card-text"> Entertainer</p>
+            <button type="button" class="btn btn-outline-dark">Know more</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 mb-3 mb-sm-0">
+        <div class="card m-2 bg-info" style="width:18rem;">
+          <div class="card-body">
+            <img src="./assets/Images/RRR.jpg" class="card-img-top rounded" alt="RRR">
+            <h5 class="card-title pt-3"><a href="https://www.imdb.com/title/tt8178634/" class="card-title text-dark"
+                target="_blank"> RRR</a> </h5>
+            <p class="card-text"> Movie with goosebumps everywhere</p>
+            <button type="button" class="btn btn-outline-dark">Know more</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 mb-3 mb-sm-0">
+        <div class="card m-2 bg-info" style="width:18rem;">
+          <div class="card-body">
+            <img src="./assets/Images/Jailer.jpg" class="card-img-top rounded" alt="Jailer">
+            <h5 class="card-title pt-3"><a href="https://www.imdb.com/title/tt11663228/" class="card-title text-dark"
+                target="_blank"> Jailer</a> </h5>
+            <p class="card-text"> Action, Emotional and Sentimental</p>
+            <button type="button" class="btn btn-outline-dark">Know more</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 mb-3 mb-sm-0">
+        <div class="card m-2 bg-info" style="width:18rem;">
+          <div class="card-body">
+            <img src="./assets/Images/Theri.jpg" class="card-img-top rounded" alt="Theri">
+            <h5 class="card-title pt-3"><a href="https://www.imdb.com/title/tt5440700/" class="card-title text-dark"
+                target="_blank"> Theri</a> </h5>
+            <p class="card-text"> Family entertainer</p>
+            <button type="button" class="btn btn-outline-dark">Know more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container text-center">
+      <h3 class="container-title text-info pt-4">
+        Thriller Movies
+      </h3>
+      <div class="row">
+        <div class="col m-3 border bg-dark border-2-solid">
+          <img src="./assets/Images/Kolaiyuthir Kaalam .jpg" alt="Kolaiyuthir Kaalam" Class="rounded mt-2 card-img-top bg-info p-4">
+          <a href="https://m.imdb.com/title/tt6280858/mediaviewer/rm1624543489" target="_blank" class="card-title text-light p-4">
+            Kolaiyutir Kaalam
+          </a>
+          <p class="card-text text-white">
+            Fantasy cum Thriller
+          </p>
+          <button type="button" class="btn m-3 btn-outline-light">Know more</button>
+        </div>
+        <div class="col m-3 border bg-dark border-2-solid">
+          <img src="./assets/Images/Orphan.jpg" alt="Orphan" Class="rounded mt-2 card-img-top bg-info p-4">
+          <a href="https://www.imdb.com/title/tt1148204/" target="_blank" class="card-title text-light p-4">
+            Orphan
+          </a>
+          <p class="card-text text-white">
+            Unexpected twist and turns with horror
+          </p>
+          <button type="button" class="btn m-3 btn-outline-light">Know more</button>
+        </div>
+        <div class="col m-3 border bg-dark border-2-solid">
+          <img src="./assets/Images/Psycho.jpg" alt="Psycho" Class="rounded mt-2 card-img-top bg-info p-4">
+          <a href="https://www.imdb.com/title/tt9109976/" target="_blank" class="card-title text-light p-4">
+            Psycho
+          </a>
+          <p class="card-text text-white">
+            Thriller revolved around childhood horror
+          </p>
+          <button type="button" class="btn m-3 btn-outline-light">Know more</button>
+        </div>
+        <div class="col m-3 border bg-dark border-2-solid">
+          <img src="./assets/Images/Ratchasan.jpg" alt="Raatchsan" Class="rounded mt-2 card-img-top bg-info p-4">
+          <a href="https://www.imdb.com/title/tt7060344/" target="_blank" class="card-title text-light p-4">
+            Raatchsan
+          </a>
+          <p class="card-text text-white">
+            Name reveal the thrill in the movie
+          </p>
+          <button type="button" class="btn m-3 btn-outline-light">Know more</button>
+        </div>
+      </div>
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/Images/Smurfs_1080x1620.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/Images/Psycho.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/Images/Life of Pi.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
     
+  </main>
+  <footer class="img-fluid bg-dark p-5">
+    <img src="./assets/Images/Logo.png" class="img-fluid mx-auto d-block" alt="Logo Image">
+    <div class="alert alert-info text-center m-3" role="alert">
+      Collections by H. Jeya-rosini
+    </div>
+  </footer>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
+
 </body>
+
 </html>
